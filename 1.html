@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script>
+		var value = prompt("Калькулятор:");
+		value = eval(value);
+		alert(value);
+		alert("Задумайте число\nУмножте его на 2\nИ прибавьте 7");
+
+		value = prompt("Введите результат: ");
+		value = (value - 7)/2;
+		alert(value);
+
+		var name = prompt("Имя: ");
+		var age = prompt("Год рождения: ");
+		age = new Date().getFullYear() - age;
+		name = name + ": " + age
+		document.write(name) 
+
+	</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
