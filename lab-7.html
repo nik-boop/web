@@ -1,0 +1,113 @@
+
+<script>
+let arr1 = [1, 2, 3];
+let arr2 = [];
+for(let i = 0; i < arr1.length; i++) {
+ arr2.push(arr1[i] * 2);
+}
+console.log(arr2);
+
+
+arr1 = [1, 2, 3];
+arr2 = arr1.map(function(item) {
+ return item * 2;
+});
+console.log(arr2);
+
+
+// Task 1
+// Create new array whit conversion function f(x) = (x+10)*3
+arr1 = [1, 2, 3];
+arr2 = arr1.map(item => (item + 10) * 3);
+console.log(arr2);
+
+// Task 2
+// Get age
+// yb - array of birth years
+var now = new Date();
+yb = [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2030]
+arr = yb.map(item => (now.getFullYear() - item > 0 ? now.getFullYear() - item : "What time are you from?"))
+console.log(arr);
+
+const persons = [
+ { name: 'Peter', age: 16 },
+ { name: "Mark", age: 18 },
+ { name: "John", age: 27 },
+ { name: "Jane", age: 14 },
+ { name: "Tony", age: 24},
+];
+let fullAge = [];
+for(let i = 0; i < persons.length; i++) {
+ if(persons[i].age >= 18) {
+   fullAge.push(persons[i]);
+ }
+}
+console.log(fullAge);
+
+fullAge = persons.filter(person => person.age >= 18);
+console.log(fullAge);
+
+
+// Task 3
+// Check for administrator failure
+
+let client = [
+{name: 'Admin1', id:1001},
+{name: 'Petya', id:1794},
+{name: 'Admin2', id:1002},
+{name: 'client3', id:1003},
+{name: 'Admin4', id:1004},
+{name: 'good', id:1000},];
+let admin_id = [1000, 1001, 1002, 1003]
+
+check = client.filter(client => admin_id.includes(client.id));
+console.log(check);
+
+// Task 4
+// Calculate the students average score.
+
+let students = [
+{name: 'Student 1', scores: [80, 90, 70]},
+{name: 'Student 2', scores: [70, 60, 100]},
+{name: 'Student 3', scores: [95, 80 ,75]},
+{name: 'Student 4', scores: [60, 100, 100]},
+{name: 'Student 5', scores: [75, 80, 90]}
+]
+
+let sum = students.map( stud => {return {name: stud.name, rez: Math.round(stud.scores.reduce(function(accumulator, currentValue){return accumulator + currentValue;})/stud.scores.length)}});
+
+console.log(sum);
+
+let strArray = ['JavaScript', "Python", "PHP", "Java", "C"];
+function mapForEach(arr, fn) {
+ let newArray = [];
+ for(let i = 0; i < arr.length; i++) {
+   newArray.push(
+     fn(arr[i])
+   );
+ }
+ return newArray;
+}
+let lenArray = mapForEach(strArray, function(item) {
+ return item.length;
+});
+// выводит [ 10, 6, 3, 4, 1 ]
+console.log(lenArray);
+
+
+// Task 5
+// Check for length
+function mapForEach2 (arr, fn) {
+ let newArray = [];
+ for(let i = 0; i < arr.length; i++) {
+   newArray.push(
+   {name: arr[i],
+   rez: fn(arr[i])
+   });
+ } 
+ return newArray;
+}
+
+lenArray = mapForEach2(strArray, item => (item.length > 3) ? 1 : 0)
+console.log(lenArray);
+</script>
