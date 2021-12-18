@@ -6,7 +6,7 @@ age: 30
 user.sayHi = function() {
 alert("Привет!");
 };
-console.log(user.sayHi());
+//console.log(user.sayHi());
 
 
 //Task 2
@@ -19,7 +19,7 @@ telefon_number: '+7 123 321 99 99',
 mail: 'nik@gmail.com'
 };
 
-alert(` name: ${client.name},\n age: ${client.age},\n id: ${client.id}`);
+//alert(` name: ${client.name},\n age: ${client.age},\n id: ${client.id}`);
 
 
 //Task 3
@@ -52,9 +52,9 @@ alert(`restaurant\n id: ${restaurants.id[x]}\n address: ${restaurants.address[x]
 };
 
 
-clients.get(0)
-orders.get(0)
-restaurants.get(0)
+//clients.get(0)
+//orders.get(0)
+//restaurants.get(0)
 
 
 function User(name) {
@@ -62,8 +62,8 @@ function User(name) {
 	this.isAdmin = false;
 }
 user = new User('Nik');
-alert(user.name); // Вася
-alert(user.isAdmin); // false
+//alert(user.name); // Вася
+//alert(user.isAdmin); // false
 
 
 
@@ -73,8 +73,56 @@ alert(user.isAdmin); // false
 function Grup(name, names) {
 	this.names = names;
 	this.name = name;
+};
+grup = new Grup('PI20-6',['nik1','nik2','nik3','nik4','nik5']);
+//alert(`${grup.name}\n${grup.names}`);
+
+
+function User(name) {
+this.name = name;
+this.sayHi = function() {
+alert( "Меня зовут: " + this.name );
+};
 }
-user = new User('PI20-6',['nik1','nik2','nik3','nik4','nik5']);
-alert(user.name); // Вася
-alert(user.isAdmin); // false
+
+let vasya = new User("Вася");
+vasya.sayHi();
+
+
+
+
+
+//Task 5
+//Create objects student
+function Sudent(name, age, grup) {
+
+this.set_name(name);
+this.age = age;
+this.grup = grup;
+
+this.sayHi = function() {
+alert( "Меня зовут: " + this.name );
+};
+
+this.set_name = function(name) {
+
+if (typeof name == "string"){
+	this.f_name = name.split(' ')[0]
+  this.l_name = name.split(' ')[1]
+}
+
+else if (typeof name == "object")
+{this.f_name = name[0]
+ this.l_name = name[1]}
+ 
+else {alert('Incorrect name!')}
+
+};
+this.inf = function() {
+return `firs name${this.f_name}\nlsat name${this.l_name}\nage ${this.age}\ngrup ${this.grup}`
+};
+}
+
+let student1 = new Sudent('First_name Last_name', 19, 'PI120-1');
+//alert(student1.inf());
 </script>
