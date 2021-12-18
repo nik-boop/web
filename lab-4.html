@@ -70,11 +70,11 @@ alert(user.isAdmin); // false
 //Task 4
 //Get name in grup
 
-function Grup(name) {
+function Grup(name, names) {
+	this.names = names;
 	this.name = name;
-	this.isAdmin = false;
 }
-user = new User('Nik');
+user = new User('PI20-6',['nik1','nik2','nik3','nik4','nik5']);
 alert(user.name); // Вася
 alert(user.isAdmin); // false
 </script>
