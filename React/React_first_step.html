@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Add React in One Minute</title>
-  </head>
-  <body>
 
-    <h2>Add React in One Minute</h2>
-    <p>This page demonstrates using React with no build tooling.</p>
-    <p>React is loaded as a script tag.</p>
+<head>
+  <meta charset="UTF-8" />
+  <title>React</title>
+</head>
 
-    <!-- We will put our React component inside this div. -->
-    <div class="like_button_container" data-commentid="1"></div>
+<body>
+  <div>
+    <p>Что-то хорошее</p>
+    <div class="like_button_container" data-commentid="578"></div>
+  </div>
+  <div>
+    <p>Что-то еше лучше</p>
+    <div class="like_button_container" data-commentid="254"></div>
+  </div>
+  <div>
+    <p>Что-то совсем хорошее!</p>
+    <div class="like_button_container" data-commentid="371"></div>
+  </div>
 
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
+  <script src="like_button.js"></script>
 
-  </body>
+</body>
+
 </html>
