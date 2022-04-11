@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+
+.App-button {
+  background-color: #54678d;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: calc(4px + 2vmin);
+  margin: 15px;
+}
+
+.App-age {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.App-count {
+  padding: 25px;
+}
+
+.App-input {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.App-age-button {
+  padding: 25px;
+}
+
+.App-up-button {
+  display: block;
+  background-color: #54678d;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: calc(4px + 2vmin);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
