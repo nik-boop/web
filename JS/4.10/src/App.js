@@ -1,29 +1,30 @@
-import { render } from '@testing-library/react';
+import { useForm } from "react-hook-form";
 import React, { useState } from 'react';
 import './App.css';
 
 
 function ToDo() {
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => setTodos(todos.concat(data));
 
   const [todos, setTodos] = useState([{ text: 'Изучить хуки' }]);
   let inp;
 
   return (
     <div className="App-input">
-      <p3>
-        Добавить новое дело?
-      </p3>
-      <ul>
-        {todos.map(item => (
-          <li>{item.text}</li>
-        ))}
-      </ul>
-      <textarea className='App-input'
-        onChange={(e) => { inp = e.target.value }}
-      />
-      <button className="App-button" onClick={() => setTodos(todos.concat({ text: inp }))}>
-        Add
-      </button>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <label>
+          Добавить новое дело?
+        </label>
+        <ul>
+          {todos.map(item => (
+            <li>{item.text}</li>
+          ))}
+        </ul>
+        <input defaultValue="Новое дело" {...register("text", { required: true, maxLength: 20 })} />
+
+        <input type="submit" />
+      </form>
     </div>
   );
 }
@@ -54,8 +55,8 @@ function App() {
         <div className='App-age'>
           <div className='App-count'> Возраст {age} </div>
           <div className='App-age-button'>
-            <button className="App-up-button" onClick={() => setAge(age - 1)}> {s1} </button>
-            <button className="App-up-button" onClick={() => setAge(age + 1)}> {s2} </button>
+            <button className="App-up-button" onClick={() => setAge(age + 1)}> {s1} </button>
+            <button className="App-up-button" onClick={() => setAge(age - 1)}> {s2} </button>
           </div>
         </div>
 

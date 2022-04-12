@@ -1,0 +1,67 @@
+.squid-h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.squid-preview-image {
+    background-size: cover;
+    position: relative;
+    padding: 60% 40px 40px;
+    border-radius: 30px;
+}
+
+.squid-preview-image-text-meta {
+    color: #fff;
+}
+
+.squid-content-section-preview-content {
+}
+
+.squid-content {
+}
+
+.squid-content-text {
+}
+
+.text {
+    padding: 40px 40px 40px 40px;
+}
+
+#squid-page p {
+    margin-bottom: 0;
+    padding: 20px;
+    color: #2f4232;
+    font-size: 24px;
+    font-family: DejaVu Sans, serif;
+    text-align: left;
+    font-kerning: auto;
+    font-variant-ligatures: historical-ligatures;
+    font-variant: small-caps;
+}
+#squid-page h1 {
+    align-items: start;
+    align-self: start;
+    align-content: start;
+    justify-content: start;
+    justify-items: start;
+    justify-self: start;
+    text-align: start;
+    text-align-all: start;
+}
+
+#squid-page b {
+    margin-bottom: 0;
+    padding: 20px;
+    color: #2f4232;
+    font-size: 23px;
+    font-family: Ubuntu, serif;
+    text-align: left;
+    font-kerning: auto;
+    font-variant: petite-caps;
+}
+
+.squid {
+    background: #b2e8cf;
+    height: 100%;
+    width: 100%;
+}

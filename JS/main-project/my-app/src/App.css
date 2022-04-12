@@ -1,0 +1,105 @@
+.App {
+  background-color: #f0e6e6;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  width: 100%;
+}
+
+.head-top {
+  display: block;
+  border: #f0e6e6;
+  background-color: #ffa33b;
+  width: 100%;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  border: #f0e6e6;
+  background-color: #ffc916;
+  width: 100%;
+}
+
+.logo {
+  display: inline;
+  flex: 3;
+  padding: 10pt;
+
+}
+.head-box {
+  display: inline;
+  flex: 1;
+  padding: 10pt;
+
+}
+
+.kurs-inf {
+  float: left;
+}
+
+
+.kurs-inf p2{
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+
+}
+
+.kurs-inf p3{
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  
+}
+
+.kurs-inf p4{
+  display: block;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.main {
+  display: block;
+}
+
+.imege {
+  float: left;
+  display: flex;
+  margin: 100 px;
+}
+
+.pict {
+  
+  display: block;
+  background-color: #fae59f;
+  width: 200px;
+  height: 300px;
+  padding: 10%;
+}
+
+.pict p{
+  display: block;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.pict h{
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+}
+.pict img{
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  width: 150px;
+  height: 150px;
+  background-position:top
+
+}

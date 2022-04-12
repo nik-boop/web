@@ -1,0 +1,47 @@
+.meatballs-h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.meatballs-preview-image {
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    padding: 90% 10px 40px;
+}
+
+.meatballs-preview-image-text-meta {
+    color: #fff;
+}
+
+.meatballs-content-section-preview-content {
+}
+
+.meatballs-content {
+}
+
+.meatballs-content-text {
+
+}
+
+.text {
+    padding: 40px 40px 40px 40px;
+}
+
+#meatballs-page p {
+    margin-bottom: 0;
+    padding: 20px;
+    color: #2f4232;
+    font-size: 26px;
+    font-family: Garuda, serif;
+    text-align: left;
+    font-kerning: auto;
+    font-variant-ligatures: common-ligatures;
+    font-variant: small-caps;
+}
+
+.meatballs {
+    background: #d3c0d0;
+    height: 100%;
+    width: 100%;
+}
