@@ -1,0 +1,25 @@
+
+.category {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font: normal 24px/1 Verdana, Geneva, sans-serif;
+    color: rgba(0,0,0,1);
+    text-overflow: ellipsis;
+    margin: 1px 1px 1px 1px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category .categoryName{
+
+}
+.category .categoryView{
+
+}
+.category .categoryEdit{
+    text-align: right;
+    flex: 1;
+}

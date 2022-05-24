@@ -1,0 +1,30 @@
+.DoList .todo {
+    color: #007;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #bbb;
+    border-radius: 4px;
+    font: normal 24px/1 Verdana, Geneva, sans-serif;
+    color: rgba(0,0,0,1);
+    text-overflow: ellipsis;
+    flex-wrap: wrap;
+    margin: 2px 2px 2px 50px;
+    justify-content: space-between;
+}
+
+
+
+.DoList .do {
+    color: #222;
+    flex: 1;
+}
+.DoList .button {
+    color: #000;
+}
+.DoList .number {
+    color: #666;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+}
